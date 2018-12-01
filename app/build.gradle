@@ -1,4 +1,4 @@
-apply plugin: 'com.android.library'
+apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
 
@@ -9,7 +9,7 @@ android {
     defaultConfig {
         minSdkVersion 23
         targetSdkVersion 28
-        /*applicationId "ai.ronnicknachok.simplekeyboard"*/
+        applicationId "ai.ronnicknachok.simplekeyboard"
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
