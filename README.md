@@ -1,4 +1,4 @@
-# Android-CustomKeyboard
+# Custom Keyboard
 Fully customizable Android keyboard written in Kotlin.
 
 ## Prerequisites
@@ -7,13 +7,9 @@ Make sure you have a version of Android Studio installed that supports Kotlin (3
 ## Running the Demo
 Just download the project, open it in Android Studio, connect to a virtual or physical device, and run it! There shouldn't be any further configuration required (unless you need to download build tools, etc., but Android Studio should prompt you to do that).
 
-The demo is one activity (MainActivity.java). Below are GIF's of the functionality in both ladscape and portrait. Notice that in both orientations the keyboard takes up the full screen width, and the button widths change (they are a percentage of the screen width). That is because it extends the [ResizableRelativeLayout](https://github.com/DonBrody/Android-ResizableRelativeLayout). Additionally, the component responsible for the expansion and collapse of the keyboard is the [ExpandableView](https://github.com/DonBrody/Android-ExpandableView). Please take a look at their documentation for more detail.
-
 <img height="300px" width="400px" src="https://s3.amazonaws.com/don-brody-images/CustomKeyboard+Landscape.gif"/>&nbsp;&nbsp;&nbsp;&nbsp;<img height="400px" width="300px" src="https://s3.amazonaws.com/don-brody-images/CustomKeyboard+Portrait.gif"/>
 
-## Why I Made It
-The Android system keyboard API is limited and difficult to work with. I spent many hours researching different ways to gain full control of the keyboard, and ended up piecing together a few different approaches and adding some of my own flavor to it. I hope that I can save
-somebody else a lot of time and headache.
+The Android system keyboard API is limited and difficult to work with. I spent many hours researching different ways to gain full control of the keyboard, and ended up piecing together a few different approaches and adding some of my own flavor to it. I hope that I can save somebody else a lot of time and headache.
 
 ## How It Works
 The CustomKeyboardView can be injected with any keyboard layout and controller. All you need to do is create an EditText, pass it to the CustomKeyboardView, and indicate what keyboard type it should be using. Below is the entire MainActivity demo class:
@@ -102,10 +98,3 @@ Note: The CustomTextField is a very simple component, and like the custom keyboa
 
 ## Next Steps
 Add the CustomKeyboardView to any (and hopefully all :) of your projects, add any layout or controllers you'd like, modify the UI in any way that fits your needs, and enjoy!
-
-## Dependencies
-* [ResizableRelativeLayout](https://github.com/DonBrody/Android-ResizableRelativeLayout)
-* [ExpandableView](https://github.com/DonBrody/Android-ExpandableView)
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
