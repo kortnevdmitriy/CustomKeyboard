@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:id="@+id/testLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="300dp">
+
+            <!-- SYSTEM KEYBOARDS -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/labelMargin"
+                android:text="@string/systemKeyboardLabel"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/labelTextSize"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="@dimen/fieldWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fieldMarginBottom"
+                android:hint="@string/systemNumber"
+                android:inputType="number"
+                android:maxLength="20" />
+
+            <EditText
+                android:layout_width="@dimen/fieldWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fieldMarginBottom"
+                android:hint="@string/systemNumberDecimal"
+                android:inputType="numberDecimal"
+                android:maxLength="20" />
+
+            <EditText
+                android:layout_width="@dimen/fieldWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fieldMarginBottom"
+                android:hint="@string/systemQwerty"
+                android:inputType="text"
+                android:maxLength="50" />
+
+
+            <!-- CUSTOM KEYBOARDS -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/labelMargin"
+                android:text="@string/customKeyboardAndFieldsLabel"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/labelTextSize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/customFieldWrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- Add custom fields dynamically -->
+            </LinearLayout>
+
+            <!-- SWITCH ACTIVITIES BUTTON -->
+            <Button
+                android:id="@+id/switchActivitiesButton"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/colorAccent"
+                android:text="@string/toMainButtonText"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ai.ronnicknachok.customkeyboard.components.keyboard.CustomKeyboardView
+        android:id="@+id/customKeyboardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
