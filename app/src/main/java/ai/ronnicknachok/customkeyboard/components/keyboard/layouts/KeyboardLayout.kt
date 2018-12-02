@@ -60,7 +60,7 @@ abstract class KeyboardLayout(
 			(screenWidth * widthAsPctOfScreen).toInt(),
 			LayoutParams.WRAP_CONTENT
 		)
-		ComponentUtils.setBackgroundTint(button, Color.LTGRAY)
+		ComponentUtils.setBackgroundTint(button, Color.WHITE)
 		button.isAllCaps = false
 		button.textSize = textSize
 		button.text = text

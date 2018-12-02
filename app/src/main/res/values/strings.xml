@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CustomKeyboard</string>
+    <string name="app_name">Custom Keyboard</string>
 
     <string name="systemKeyboardLabel">System Keyboards</string>
     <string name="systemNumber">System Number Keyboard</string>

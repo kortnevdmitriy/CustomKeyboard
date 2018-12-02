@@ -429,7 +429,7 @@ class QwertyKeyboardLayout(context: Context, controller: KeyboardController?) :
 							"⇧", columnWidth, KeyboardController.SpecialKey.CAPS
 						)
 						ComponentUtils.setBackgroundTint(
-							button, Color.parseColor("#33CCFF")
+							button, Color.parseColor("#FFFFFF")
 						)
 						return button
 					}
